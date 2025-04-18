@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 221 89% 35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 221 89% 35%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 221 89% 35%; 
+    --input: 221 89% 35%;
+    --ring: 221 89% 35%;
+    --neonBlue: #0953e6;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 221 89% 35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 221 89% 35%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 221 89% 35%; 
+    --input: 221 89% 35%;
+    --ring: 221 89% 35%;
+    --neonBlue: #0953e6;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-inter text-lg transition-colors duration-300;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-divider {
+    @apply w-1/2 h-px bg-neonBlue my-16 mx-auto;
+  }
+  .hero-title {
+    @apply text-shadow shadow-neonBlue;
+  }
+  .hero-loukili {
+    @apply text-neonBlue;
+    text-shadow: 0 0 2px rgba(9, 83, 230, 0.5);
+  }
+  .neon-border {
+    @apply border border-neonBlue/20 hover:border-neonBlue/50 transition-colors duration-300;
+    box-shadow: 0 0 4px rgba(9, 83, 230, 0.3);
+  }
+  .text-shadow {
+    text-shadow: 0 0 0.5px var(--tw-shadow-color, #0953e6);
+  }
+  .glow-border {
+    box-shadow: 0 0 4px rgba(9, 83, 230, 0.3);
+    border: 1px solid rgba(9, 83, 230, 0.3);
+  }
+  .skill-tag {
+    @apply px-3 py-2 rounded-lg text-sm transition-all duration-300;
+    border: 2px solid #0953e6;
+  }
+  .skill-tag:hover {
+    background-color: #0953e6;
+    color: white;
+  }
+  .active-nav-link {
+    @apply relative;
+  }
+  .active-nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-neonBlue;
+    animation: pulse 1.5s infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+  
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+  }
+  
+  .bg-hero-gradient {
+    background: radial-gradient(ellipse at center, rgba(9, 83, 230, 0.1) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(to bottom, var(--background), var(--background));
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+}
