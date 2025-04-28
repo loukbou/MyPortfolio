@@ -1,15 +1,15 @@
 export const Skills = () => {
   const languages = [
-    { name: "Arabic", level: "Native", flag: "🇲🇦" },
-    { name: "English", level: "Fluent", flag: "🇬🇧" },
-    { name: "French", level: "Fluent (DELF B2)", flag: "🇫🇷" },
-    { name: "Spanish", level: "Beginner", flag: "🇪🇸" },
+    { name: "Arabe", level: "Langue maternelle", flag: "🇲🇦" },
+    { name: "Anglais", level: "Courant", flag: "🇬🇧" },
+    { name: "Français", level: "Courant (DELF B2)", flag: "🇫🇷" },
+    { name: "Espagnol", level: "Débutante", flag: "🇪🇸" },
   ];
 
   const technicalSkills = [
     "Python", "SQL", "Docker", "Power BI", "Tableau", "R", 
-    "Excel", "Machine Learning", "Statistical Analysis", 
-    "Data Visualization", "ETL Processes", "Git", 
+    "Excel", "Machine Learning", "Analyse Statistique", 
+    "Visualisation de Données", "Processus ETL", "Git", 
     "Cloud Computing", "Big Data"
   ];
 
@@ -17,19 +17,18 @@ export const Skills = () => {
     <section id="skills" className="py-20 px-6 md:px-20 max-w-5xl mx-auto">
       <h2 className="text-3xl md:text-4xl mb-16 text-center">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 drop-shadow-[0_2px_4px_rgba(43,88,255,0.3)]">
-        Languages & Skills
+          Langues & Compétences
         </span>
       </h2>
-      
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="w-full">
-          <h3 className="text-xl font-medium mb-6">Languages</h3>
-          <div className="grid grid-cols-2 gap-6"> {/* Two columns for languages */}
+          <h3 className="text-xl font-medium mb-6">Langues</h3>
+          <div className="grid grid-cols-2 gap-6">
             {languages.map((lang) => (
               <div
                 key={lang.name}
-                className="flex items-center gap-3 w-[4cm]" // Keeps the same width for each language
+                className="flex items-center gap-3 w-[4cm]"
               >
                 <span className="text-2xl">{lang.flag}</span>
                 <div>
@@ -42,8 +41,8 @@ export const Skills = () => {
         </div>
 
         <div className="w-full">
-          <h3 className="text-xl font-medium mb-6">Technical Skills</h3>
-          <div className="flex flex-wrap gap-4"> {/* Multiple skill tags per row */}
+          <h3 className="text-xl font-medium mb-6">Compétences Techniques</h3>
+          <div className="flex flex-wrap gap-4">
             {technicalSkills.map((skill) => (
               <span
                 key={skill}

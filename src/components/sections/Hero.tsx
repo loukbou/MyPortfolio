@@ -16,26 +16,26 @@ export const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-foreground/80 mb-12">
-          Business Intelligence & Analytics Student
+          Étudiante en Business Intelligence & Analytics
         </p>
         
         <div className="relative">
-          {/* German opening quote „ */}
-          <span className="absolute top-0 -left-4 text-4xl text-white">„</span>
+          {/* Guillemet ouvrant français « */}
+          <span className="absolute top-0 -left-4 text-4xl text-white">«</span>
           
           <blockquote className="text-xl md:text-2xl text-white/90 italic px-8 py-6 leading-relaxed">
-            The future belongs to those who harness data with purpose.
+            L'avenir appartient à ceux qui exploitent les données avec intention.
           </blockquote>
           
-          {/* German closing quote “ */}
-          <span className="absolute bottom-0 -right-4 text-4xl text-white">“</span>
+          {/* Guillemet fermant français » */}
+          <span className="absolute bottom-0 -right-4 text-4xl text-white">»</span>
         </div>
       </div>
 
       <button
         onClick={scrollToAbout}
         className="absolute bottom-10 animate-bounce-slow text-white"
-        aria-label="Scroll down"
+        aria-label="Défiler vers le bas"
       >
         <ChevronDown size={32} strokeWidth={1.5} />
       </button>

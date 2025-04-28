@@ -11,7 +11,7 @@ export const Contact = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
-          <h3 className="text-xl font-medium mb-6 text-foreground">Connect With Me</h3>
+          <h3 className="text-xl font-medium mb-6 text-foreground">Me Contacter</h3>
           <div className="space-y-4">
             <a
               href="https://github.com/loukbou"
@@ -42,12 +42,12 @@ export const Contact = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-medium mb-6 text-foreground">Send a Message</h3>
+          <h3 className="text-xl font-medium mb-6 text-foreground">Envoyer un message</h3>
           <form className="space-y-4">
             <div>
               <input
                 type="text"
-                placeholder="Name"
+                placeholder="Nom"
                 className="w-full p-3 bg-transparent rounded-lg border-[3px] border-gray-600 focus:outline-none focus:border-blue-500 transition-all duration-300"
                 required
               />
@@ -72,7 +72,7 @@ export const Contact = () => {
               type="submit"
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300 font-medium shadow-[0_4px_14px_rgba(43,88,255,0.3)] hover:shadow-[0_6px_18px_rgba(43,88,255,0.4)]"
             >
-              Send Message
+              Envoyer
             </button>
           </form>
         </div>

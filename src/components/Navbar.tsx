@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -12,10 +11,10 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const sections = [
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "experience", label: "Experience" },
-    { id: "skills", label: "Skills" },
+    { id: "about", label: "À propos" },
+    { id: "projects", label: "Projets" },
+    { id: "experience", label: "Expérience" },
+    { id: "skills", label: "Compétences" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -28,7 +27,7 @@ export const Navbar = () => {
   };
 
   useEffect(() => {
-    // Observer for sections to update active nav item
+    // Observer pour mettre à jour la section active
     const observerOptions = {
       root: null,
       rootMargin: "-100px 0px -100px 0px",
@@ -45,18 +44,18 @@ export const Navbar = () => {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    // Observe all sections
+    // Observer toutes les sections
     document.querySelectorAll("section[id]").forEach((section) => {
       observer.observe(section);
     });
 
-    // Handle scroll progress
+    // Gestion de la progression du scroll
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
       const progress = (window.scrollY / totalHeight) * 100;
       setScrollProgress(progress);
       
-      // Check if page is scrolled to toggle navbar size
+      // Vérifier si la page est scrollée pour réduire la navbar
       setIsScrolled(window.scrollY > 20);
     };
 
@@ -74,7 +73,7 @@ export const Navbar = () => {
         isScrolled ? "py-2" : "py-4"
       } bg-foreground/10 backdrop-blur-md`}
     >
-      {/* Progress bar */}
+      {/* Barre de progression */}
       <div className="absolute top-0 left-0 right-0">
         <Progress value={scrollProgress} className="h-0.5 rounded-none bg-transparent" />
       </div>
@@ -89,7 +88,7 @@ export const Navbar = () => {
           B.LOUKILI
         </a>
 
-        {/* Desktop Navigation */}
+        {/* Navigation desktop */}
         {!isMobile ? (
           <nav className="flex items-center space-x-8">
             {sections.map((section) => (
@@ -111,7 +110,7 @@ export const Navbar = () => {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-md hover:bg-foreground/20"
-              aria-label="Toggle menu"
+              aria-label="Ouvrir le menu"
             >
               <Menu size={24} />
             </button>
@@ -119,7 +118,7 @@ export const Navbar = () => {
         )}
       </div>
 
-      {/* Mobile Menu */}
+      {/* Menu mobile */}
       {isMobile && mobileMenuOpen && (
         <nav className="fixed left-0 right-0 bg-background/95 backdrop-blur-lg py-6 px-4 shadow-md animate-fade-in">
           <div className="flex flex-col space-y-4">

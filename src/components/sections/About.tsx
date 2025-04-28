@@ -2,37 +2,37 @@ export const About = () => {
   return (
     <section id="about" className="py-20 px-6 md:px-20 max-w-6xl mx-auto">
       <h2 className="text-3xl md:text-4xl mb-16 text-center text-white filter drop-shadow-[0_0_8px_#ffffff4d]">
-        About Me
+        À Propos de Moi
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[2cm] items-start"> {/* items-start for alignment */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[2cm] items-start"> {/* items-start pour l'alignement */}
 
-        {/* === Description (left side) - Original Style === */}
+        {/* === Description (côté gauche) - Style Original === */}
         <div className="relative space-y-6 mt-[4cm] pl-4 pr-4 pt-4 pb-4">
-          {/* Top-left blue corner (original) */}
+          {/* Coin bleu en haut à gauche (original) */}
           <div className="absolute top-0 left-0">
             <div className="h-[2px] w-[3cm] bg-[#2b58ff] shadow-[0_0_10px_#2b58ff]"></div>
             <div className="h-[3cm] w-[2px] bg-[#2b58ff] shadow-[0_0_10px_#2b58ff] mt-[-2px]"></div>
           </div>
 
-          {/* Bottom-right blue corner (original) */}
+          {/* Coin bleu en bas à droite (original) */}
           <div className="absolute bottom-0 right-0">
             <div className="h-[2px] w-[3cm] bg-[#2b58ff] shadow-[0_0_10px_#2b58ff] absolute bottom-0 right-0"></div>
             <div className="h-[3cm] w-[2px] bg-[#2b58ff] shadow-[0_0_10px_#2b58ff] absolute bottom-0 right-0 mb-[-2px]"></div>
           </div>
 
-          {/* Your original text */}
+          {/* Votre texte original */}
           <p className="text-foreground/90 leading-relaxed">
-            Passionate about transforming raw data into meaningful insights, I'm on a journey to leverage analytics and business intelligence to solve complex problems. My interests lie at the intersection of data science, machine learning, and business strategy—where I believe the most impactful innovations happen.
+            Passionné par la transformation des données brutes en informations significatives, je suis en quête d'utiliser l'analyse et l'intelligence d'affaires pour résoudre des problèmes complexes. Mes intérêts se situent à l'intersection de la science des données, de l'apprentissage automatique et de la stratégie d'entreprise - là où je crois que les innovations les plus impactantes se produisent.
           </p>
           <p className="text-foreground/90 leading-relaxed">
-            With a strong foundation in mathematics and a deep curiosity for data patterns, I aim to bridge the gap between technical capabilities and business needs. I'm constantly exploring new technologies and methodologies to enhance my analytical toolkit.
+            Avec une solide formation en mathématiques et une profonde curiosité pour les modèles de données, je vise à combler le fossé entre les capacités techniques et les besoins métiers. J'explore constamment de nouvelles technologies et méthodologies pour enrichir ma boîte à outils analytique.
           </p>
         </div>
 
-        {/* === Education (right side) - Aligned Version === */}
-        <div className="space-y-6 mt-[4cm]"> {/* Same mt-[4cm] as description */}
-          <h3 className="text-xl font-medium mb-2">Education</h3>
+        {/* === Formation (côté droit) - Version Alignée === */}
+        <div className="space-y-6 mt-[4cm]"> {/* Même mt-[4cm] que la description */}
+          <h3 className="text-xl font-medium mb-2">Formation</h3>
           <div className="relative pl-6 border-l-2 border-neonBlue/15 space-y-6">
 
             {/* ENSIAS */}
@@ -42,7 +42,7 @@ export const About = () => {
                 <p className="text-lg font-medium">2023–2026</p>
                 <p className="font-medium">ENSIAS – Business Intelligence & Analytics</p>
                 <ul className="mt-1 space-y-1 text-sm">
-                  {/* Add content if needed */}
+                  {/* Ajouter du contenu si nécessaire */}
                 </ul>
               </div>
             </div>
@@ -54,7 +54,7 @@ export const About = () => {
                 <p className="text-lg font-medium">2021–2023</p>
                 <p className="font-medium">CPGE MP – Lycée d'Excellence de Benguérir (LYDEX)</p>
                 <ul className="mt-1 space-y-1 text-sm">
-                  <li className="flex items-start"><span className="text-gray-400 mr-2">◦</span><span>Focus: Mathématiques et Physique</span></li>
+                  <li className="flex items-start"><span className="text-gray-400 mr-2">◦</span><span>Spécialité : Mathématiques et Physique</span></li>
                 </ul>
               </div>
             </div>
