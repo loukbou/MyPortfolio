@@ -23,7 +23,7 @@ export const About = () => {
 
           {/* Votre texte original */}
           <p className="text-foreground/90 leading-relaxed">
-            Passionné par la transformation des données brutes en informations significatives, je suis en quête d'utiliser l'analyse et l'intelligence d'affaires pour résoudre des problèmes complexes. Mes intérêts se situent à l'intersection de la science des données, de l'apprentissage automatique et de la stratégie d'entreprise - là où je crois que les innovations les plus impactantes se produisent.
+            Passionnée par la transformation des données brutes en informations significatives, je suis en quête d'utiliser l'analyse et l'intelligence d'affaires pour résoudre des problèmes complexes. Mes intérêts se situent à l'intersection de la science des données, de l'apprentissage automatique et de la stratégie d'entreprise - là où je crois que les innovations les plus impactantes se produisent.
           </p>
           <p className="text-foreground/90 leading-relaxed">
             Avec une solide formation en mathématiques et une profonde curiosité pour les modèles de données, je vise à combler le fossé entre les capacités techniques et les besoins métiers. J'explore constamment de nouvelles technologies et méthodologies pour enrichir ma boîte à outils analytique.
